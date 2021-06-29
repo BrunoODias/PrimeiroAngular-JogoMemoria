@@ -1,0 +1,24 @@
+.display{
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    width: 29rem;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: solid 6px rgba(0, 0, 0, 0.575);
+    background: rgba(255, 255, 255, 0.356);
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.separator{
+    height: 3rem;
+    background: rgb(40 40 40 / 52%);
+    width: 2px;
+    margin: 0rem 0.5rem;
+}
+
+.cronometro-container{
+    margin: auto;
+}

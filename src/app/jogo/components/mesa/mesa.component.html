@@ -1,0 +1,28 @@
+<app-display [Acertos]="JogoService.Acertos" [Erros]="JogoService.Erros" #display></app-display>
+<div id="mesa">
+    <app-carta *ngFor="let carta of getCartas()" [carta]="carta" [fim]="fim"></app-carta>
+</div>
+
+<div class="modal" *ngIf="fim">
+    <span class="alert" [class.alert-success]="vitoria"
+        [class.alert-danger]="vitoria==false">{{vitoria? "Você venceu" : "Você perdeu"}}</span>
+</div>
+
+<div class="modal fade show" id="exampleModalCenter" style="padding-right: 16px; display: block;"*ngIf="fim">
+    <div class="modal-dialog modal-dialog-centered" role="document" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Fim do jogo</h5>
+            </div>
+            <div class="modal-body alert" 
+            [class.alert-success]="vitoria"
+            [class.alert-danger]="vitoria==false"
+            >
+                {{vitoria ? 'Você venceu!' : 'Você Perdeu!'}}
+            </div>
+            <div class="modal-footer justify-content-end">
+                <button class="btn btn-primary" onclick="window.location.reload()">Jogar novamente</button>
+            </div>
+        </div>
+    </div>
+</div>

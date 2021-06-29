@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    background: url('/assets/Imagens/Mesa.jpg');
+    background-size: cover;
+}
+
+@font-face{
+    font-family: FonteDigital;
+    src: url('/assets/TimerFont/DS-DIGI.TTF');
+}
+
+.fonte-digital{
+    font-family: FonteDigital;
+}
